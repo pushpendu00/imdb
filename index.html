@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imdb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div href="#" id="logo">
+                <span>IBDM</span>
+            </div>
+            
+                <div id="line-2-adjust">
+                    <input type="text" placeholder="search......" id="search-box">
+                    <div>
+                        <img src="logo/search.png">
+                    </div>
+                </div>
+                <div id="side-bar" onclick="asideBar()">
+                    <img src="logo/sidebar.png">
+                </div>      
+        </div>
+
+        <ul id="menu">
+            <li onclick="homeFun()">
+                <a href="#home">Home</a>
+            </li>
+            <li onclick="allmovieFun()">
+                <a href="#all-movie">All Movie</a>
+            </li>
+            <li>
+                <a href="#fav-movie">favourite movies</a>
+            </li>
+        </ul>
+
+    </header>
+    
+
+    
+    
+    <div id="home">
+        <!-- <div class="single-movie">
+            <div class="for-image">
+                <img src="">
+            </div>
+            <div class="description">
+                <h2><a href="#">MOVIE NAME</a></h2>
+                <div class="rating">
+                    <div>
+                        <i class="fa fa-sharp fa-light fa-star" style="color: #ffd500;"></i>
+                        <h4>&nbsp;8</h4>
+                    </div>
+                    <span>
+                        <i class="fa fa-sharp fa-regular fa-heart fa-xl" onclick="addFavourite()"></i>
+                    </span>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div id="all-movie" >
+    </div>
+
+    <div id="fav-movie">
+        <h1>Favourite movies</h1>
+        <main id="fav-movie-list">
+            <!-- Favourite movies list -->
+        </main>
+    </div>
+
+    <!-- <button onclick="testFun()">CLICK</button> -->
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
